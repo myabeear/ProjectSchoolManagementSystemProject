@@ -25,7 +25,7 @@
 
         <div class="row mb-3 mr-lg-5 ml-lg-5">
              <div class="col-md-3 col-md-offset-2 mb-3">
-                 <asp:Button ID="bntAdd" runat="server" CssClass="btn btn-primary btn-block" BackColor="#5558C9" Text="Add Subject" OnClick="bntAdd_Click" />
+                 <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-primary btn-block" BackColor="#5558C9" Text="Add Subject" OnClick="bntAdd_Click" />
              </div>
         </div>
 
