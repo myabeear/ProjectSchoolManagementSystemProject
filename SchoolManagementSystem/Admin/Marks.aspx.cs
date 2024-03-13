@@ -50,25 +50,36 @@ namespace SchoolManagementSystem.Admin
                 string rollNo = txtRoll.Text;
                 string studMarks = txtStudMarks.Text;
                 string outOfMarks = txtOutOfMarks.Text;
-                DataTable dt = fn.Fetch("Select * from Exam where ClassId = '" + classId + "'and SubjectId='" + subjectId + "' and RollNo='" + rollNo + "' ");
-                if (dt.Rows.Count == 0)
+                DataTable dttbl = fn.Fetch("Select StudentId from Student where ClassId = '" + classId + "'and RollNo='" + subjectId + "'");
+
+                if(dttbl.Rows.Count > 0)
                 {
-                    string query = "Insert into Exam values('" + classId + "','" + subjectId + "','" + rollNo + "','" + studMarks + "','" + outOfMarks + "')";
-                    fn.Query(query);
-                    lblMsg.Text = "Inserted Successfully";
-                    lblMsg.CssClass = "alert alert-success";
-                    ddlClass.SelectedIndex = 0;
-                    ddlSubject.SelectedIndex = 0;
-                    txtRoll.Text = string.Empty;
-                    txtStudMarks.Text = string.Empty;
-                    txtOutOfMarks.Text = string.Empty;
-                    GetMarks();
+                    DataTable dt = fn.Fetch("Select * from Exam where ClassId = '" + classId + "'and SubjectId='" + subjectId + "' and RollNo='" + rollNo + "' ");
+                    if (dt.Rows.Count == 0)
+                    {
+                        string query = "Insert into Exam values('" + classId + "','" + subjectId + "','" + rollNo + "','" + studMarks + "','" + outOfMarks + "')";
+                        fn.Query(query);
+                        lblMsg.Text = "Inserted Successfully";
+                        lblMsg.CssClass = "alert alert-success";
+                        ddlClass.SelectedIndex = 0;
+                        ddlSubject.SelectedIndex = 0;
+                        txtRoll.Text = string.Empty;
+                        txtStudMarks.Text = string.Empty;
+                        txtOutOfMarks.Text = string.Empty;
+                        GetMarks();
+                    }
+                    else
+                    {
+                        lblMsg.Text = "Entered <b>Data</b> already exists ";
+                        lblMsg.CssClass = "alert alert-danger";
+                    }
                 }
                 else
                 {
-                    lblMsg.Text = "Entered <b>Data</b> already exists";
+                    lblMsg.Text = "Entered RollNo <b>"+rollNo+ "</b> does not exists for selected Class! ";
                     lblMsg.CssClass = "alert alert-danger";
                 }
+
             }
             catch (Exception ex)
             {
@@ -78,32 +89,83 @@ namespace SchoolManagementSystem.Admin
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-
+            GridView1.PageIndex = e.NewPageIndex;
+            GetMarks();
         }
 
         protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
         {
-
+            GridView1.EditIndex = -1;
+            GetMarks();
         }
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
-
+            GridView1.EditIndex = e.NewEditIndex;
+            GetMarks();
         }
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
+            try
+            {
+                GridViewRow row = GridView1.Rows[e.RowIndex];
+                int examId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+                string classId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlClassGv")).SelectedValue;
+                string subjectId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlSubjectGv")).SelectedValue;
+                string rollNo = (row.FindControl("txtRollNoGv") as TextBox).Text.Trim();
+                string studMarks = (row.FindControl("txtStudMarksGv") as TextBox).Text.Trim();
+                string outOfMarks = (row.FindControl("txtOutOfMarksGv") as TextBox).Text.Trim();
+                fn.Query("Update Exam set ClassId ='" + classId + "', SubjectId='" + subjectId + "', RollNo ='" + rollNo + "', TotalMarks ='" + studMarks + "', OutOfMarks ='" + outOfMarks + "' where ExamId = '" + examId + "' ");
+                lblMsg.Text = "Record Updated Successfully";
+                lblMsg.CssClass = "alert alert-success";
+                GridView1.EditIndex = -1;
+                GetMarks();
+            }
+            catch (Exception ex)
+            {
 
+                Response.Write("<script>alert('" + ex.Message + "'); </script>");
+            }
         }
 
         protected void ddlClassGv_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            DropDownList ddlClassSelected = (DropDownList)sender;
+            GridViewRow row = (GridViewRow)ddlClassSelected.NamingContainer;
+            if (row != null)
+            {
+                if ((row.RowState & DataControlRowState.Edit) > 0)
+                {
+                    DropDownList ddlSubjectGV = (DropDownList)row.FindControl("ddlSubjectGv");
+                    DataTable dt = fn.Fetch("Select * FROM Subject where ClassId = '" + ddlClassSelected.SelectedValue + "'");
+                    ddlSubjectGV.DataSource = dt;
+                    ddlSubjectGV.DataTextField = "SubjectName";
+                    ddlSubjectGV.DataValueField = "SubjectId";
+                    ddlSubjectGV.DataBind();
+                }
+            }
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                if ((e.Row.RowState & DataControlRowState.Edit) > 0)
+                {
+                    DropDownList ddlClass = (DropDownList)e.Row.FindControl("ddlClassGv");
+                    DropDownList ddlSubject = (DropDownList)e.Row.FindControl("ddlSubjectGv");
+                    DataTable dt = fn.Fetch("Select * FROM Subject where ClassId = '" + ddlClass.SelectedValue + "'");
+                    ddlSubject.DataSource = dt;
+                    ddlSubject.DataTextField = "SubjectName";
+                    ddlSubject.DataValueField = "SubjectId";
+                    ddlSubject.DataBind();
+                    ddlSubject.Items.Insert(0, "Select Subject");
+                    string selectedSubject = DataBinder.Eval(e.Row.DataItem, "SubjectName").ToString();
+                    ddlSubject.Items.FindByText(selectedSubject).Selected = true;
 
+                }
+            }
         }
 
         protected void ddlClass_SelectedIndexChanged(object sender, EventArgs e)
