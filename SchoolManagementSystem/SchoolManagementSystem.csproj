@@ -73,6 +73,7 @@
     <Content Include="Admin\Expense.aspx" />
     <Content Include="Admin\ExpenseDetails.aspx" />
     <Content Include="Admin\Marks.aspx" />
+    <Content Include="Admin\MarksDetails.aspx" />
     <Content Include="Admin\Student.aspx" />
     <Content Include="Admin\Subject.aspx" />
     <Content Include="Admin\Teacher.aspx" />
@@ -249,6 +250,13 @@
     </Compile>
     <Compile Include="Admin\Marks.aspx.designer.cs">
       <DependentUpon>Marks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MarksDetails.aspx.cs">
+      <DependentUpon>MarksDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MarksDetails.aspx.designer.cs">
+      <DependentUpon>MarksDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Student.aspx.cs">
       <DependentUpon>Student.aspx</DependentUpon>
