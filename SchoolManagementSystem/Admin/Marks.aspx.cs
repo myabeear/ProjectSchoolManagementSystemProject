@@ -50,7 +50,7 @@ namespace SchoolManagementSystem.Admin
                 string rollNo = txtRoll.Text;
                 string studMarks = txtStudMarks.Text;
                 string outOfMarks = txtOutOfMarks.Text;
-                DataTable dttbl = fn.Fetch("Select StudentId from Student where ClassId = '" + classId + "'and RollNo='" + subjectId + "'");
+                DataTable dttbl = fn.Fetch("Select StudentId from Student where ClassId = '" + classId + "'and RollNo='" + rollNo + "'");
 
                 if(dttbl.Rows.Count > 0)
                 {
