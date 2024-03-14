@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\my project c#\\school management system\\schoolmanagementsystem\\schoolmanagementsystem\\admin\\empattendancedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\empattendancedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\my project c#\\school management system\\schoolmanagementsystem\\schoolmanagementsystem\\admin\\empattendancedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\empattendancedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expensedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expensedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expensedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expensedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\teachersubject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teachersubject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\teachersubject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teachersubject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expense.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expense.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\my project c#\\school management system\\schoolmanagementsystem\\schoolmanagementsystem\\admin\\employeeattendance.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\employeeattendance.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teacher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|c:\\my project c#\\school management system\\schoolmanagementsystem\\schoolmanagementsystem\\admin\\teacher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\teacher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teacher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -55,32 +83,12 @@
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expense.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expense.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expense.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expensedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expensedetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\teachersubject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teachersubject.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\teachersubject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\teachersubject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\student.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\student.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\student.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\student.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\expensedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|solutionrelative:schoolmanagementsystem\\admin\\expensedetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAD9CFD3-6D3C-4AA6-A943-D1BC5E5355C4}|SchoolManagementSystem\\SchoolManagementSystem.csproj|C:\\My Project C#\\School Management System\\SchoolManagementSystem\\schoolmanagementsystem\\admin\\subject.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -115,6 +123,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EmpAttendanceDetails.aspx.cs",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx.cs",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T03:51:24.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmpAttendanceDetails.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\EmpAttendanceDetails.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-14T03:40:12.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExpenseDetails.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-12T02:31:39.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeacherSubject.aspx.cs",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T06:06:36.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExpenseDetails.aspx.cs",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T02:41:21.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "EmployeeAttendance.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx.cs",
@@ -127,20 +200,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeAttendance.aspx",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
+              "DocumentIndex": 15,
+              "Title": "MarksDetails.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\MarksDetails.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\MarksDetails.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\MarksDetails.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\MarksDetails.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-13T08:11:18.54Z",
+              "WhenOpened": "2024-03-13T03:47:16.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "ClassFees.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ClassFees.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ClassFees.aspx",
@@ -153,19 +226,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MarksDetails.aspx",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\MarksDetails.aspx",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\MarksDetails.aspx",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\MarksDetails.aspx",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\MarksDetails.aspx",
+              "DocumentIndex": 6,
+              "Title": "Expense.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Expense.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Expense.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Expense.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\Expense.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-13T03:47:16.189Z"
+              "WhenOpened": "2024-03-08T07:14:30.928Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "TeacherSubject.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-06T05:57:52.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmployeeAttendance.aspx",
+              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
+              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
+              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
+              "RelativeToolTip": "SchoolManagementSystem\\Admin\\EmployeeAttendance.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-13T08:11:18.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Teacher.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Teacher.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Teacher.aspx.cs",
@@ -178,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "CommonFn.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Models\\CommonFn.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Models\\CommonFn.cs",
@@ -191,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Teacher.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Teacher.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Teacher.aspx",
@@ -204,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "MarksDetails.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\MarksDetails.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\MarksDetails.aspx.cs",
@@ -217,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Marks.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Marks.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Marks.aspx.cs",
@@ -225,11 +325,12 @@
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Marks.aspx.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T07:56:52.556Z"
+              "WhenOpened": "2024-03-12T07:56:52.556Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "AddClass.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\AddClass.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\AddClass.aspx",
@@ -237,11 +338,12 @@
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\AddClass.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-01T07:00:04.337Z"
+              "WhenOpened": "2024-03-01T07:00:04.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "ClassFees.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ClassFees.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ClassFees.aspx.cs",
@@ -249,44 +351,25 @@
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\ClassFees.aspx.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAAA4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T04:34:51.712Z"
+              "WhenOpened": "2024-03-13T04:34:51.712Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ExpenseDetails.aspx",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-12T02:31:39.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Marks.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Marks.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Marks.aspx",
               "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Marks.aspx",
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Marks.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-12T06:55:18.684Z"
+              "WhenOpened": "2024-03-12T06:55:18.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Expense.aspx",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Expense.aspx",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Expense.aspx",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Expense.aspx",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\Expense.aspx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-08T07:14:30.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Expense.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Expense.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Expense.aspx.cs",
@@ -294,45 +377,25 @@
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Expense.aspx.cs",
               "ViewState": "AQIAAJwAAAAAAAAAAAAQwLUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T07:33:38.334Z"
+              "WhenOpened": "2024-03-08T07:33:38.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TeacherSubject.aspx",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-06T05:57:52.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TeacherSubject.aspx.cs",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\TeacherSubject.aspx.cs",
-              "ViewState": "AQIAALAAAAAAAAAAAAAqwL8AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T06:06:36.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Student.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Student.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Student.aspx",
               "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Student.aspx",
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Student.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-12T03:26:03.83Z"
+              "WhenOpened": "2024-03-12T03:26:03.83Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Student.aspx.cs",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Student.aspx.cs",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Student.aspx.cs",
@@ -340,45 +403,38 @@
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Student.aspx.cs",
               "ViewState": "AQIAAH4AAAAAAAAAAAAAAIwAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T03:48:15.093Z"
+              "WhenOpened": "2024-03-12T03:48:15.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ExpenseDetails.aspx.cs",
-              "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
-              "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
-              "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
-              "RelativeToolTip": "SchoolManagementSystem\\Admin\\ExpenseDetails.aspx.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwA0AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T02:41:21.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AdminHome.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\AdminHome.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\AdminHome.aspx",
               "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\AdminHome.aspx",
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\AdminHome.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-01T03:03:51.597Z"
+              "WhenOpened": "2024-03-01T03:03:51.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Subject.aspx",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Subject.aspx",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\Subject.aspx",
               "ToolTip": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\Subject.aspx",
               "RelativeToolTip": "SchoolManagementSystem\\Admin\\Subject.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-05T02:20:30.462Z"
+              "WhenOpened": "2024-03-05T02:20:30.462Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "AdminMst.Master",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Admin\\AdminMst.Master",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Admin\\AdminMst.Master",
@@ -391,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\My Project C#\\School Management System\\SchoolManagementSystem\\SchoolManagementSystem\\Content\\styles.css",
               "RelativeDocumentMoniker": "SchoolManagementSystem\\Content\\styles.css",
