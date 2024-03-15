@@ -63,7 +63,7 @@
                         </li>
 
                              <li>
-                            <a href="../Teacher/StudAttendance.aspx">
+                            <a href="../Teacher/StudentAttendance.aspx">
                                 <div class="icon"><i class="fas fa-calendar-alt"></i></div>
                                 <div class="title">Attendance</div>
                             </a>
