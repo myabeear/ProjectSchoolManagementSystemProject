@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SchoolManagementSystem.Admin
+namespace SchoolManagementSystem.Teacher
 {
 
 
@@ -15,12 +15,12 @@ namespace SchoolManagementSystem.Admin
     {
 
         /// <summary>
-        /// MarksDetail1 control.
+        /// MarksDetail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SchoolManagementSystem.MarksDetailUserControl MarksDetail1;
+        protected global::SchoolManagementSystem.MarksDetailUserControl MarksDetail;
     }
 }

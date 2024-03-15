@@ -91,6 +91,7 @@
     <Content Include="Image\bg3.jpg" />
     <Content Include="Image\login.jpg" />
     <Content Include="Image\logo.png" />
+    <Content Include="MarksDetailUserControl.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -191,6 +192,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Teacher\MarksDetails.aspx" />
     <Content Include="Teacher\TeacherHome.aspx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
@@ -306,8 +308,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MarksDetailUserControl.ascx.cs">
+      <DependentUpon>MarksDetailUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarksDetailUserControl.ascx.designer.cs">
+      <DependentUpon>MarksDetailUserControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Models\CommonFn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teacher\MarksDetails.aspx.cs">
+      <DependentUpon>MarksDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teacher\MarksDetails.aspx.designer.cs">
+      <DependentUpon>MarksDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\TeacherHome.aspx.cs">
       <DependentUpon>TeacherHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
