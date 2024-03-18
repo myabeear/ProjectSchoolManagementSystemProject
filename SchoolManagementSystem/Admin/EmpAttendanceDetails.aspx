@@ -15,7 +15,7 @@
                 <div class="col-md-6">
                     <label for="ddlTeacher">Teacher</label>
                     <asp:DropDownList ID="ddlTeacher" runat="server" CssClass="form-control" AutoPostBack="true"></asp:DropDownList>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Teacher is required." ControlToValidate="ddlTeacher" Display="Dynamic" ForeColor="Red" InitialValue="Select Teacher" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                   .
                 </div>
 
                 <div class="col-md-6">

@@ -11,49 +11,61 @@ namespace SchoolManagementSystem.Admin
 {
     public partial class EmployeeAttendance : System.Web.UI.Page
     {
-        Commonfnx fn = new Commonfnx();
+        Commonfnx fn = new Commonfnx(); // Membuat instance dari kelas Commonfnx untuk digunakan di seluruh kelas.
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                Attendance();
+                Attendance(); // Memanggil fungsi Attendance() saat halaman dimuat pertama kali.
             }
         }
 
         private void Attendance()
         {
+            // Mengambil data dari database untuk tabel Teacher.
             DataTable dt = fn.Fetch("Select TeacherId,Name,Mobile,Email FROM Teacher");
+
+            // Mengatur sumber data dari GridView1 dan mengikat data.
             GridView1.DataSource = dt;
             GridView1.DataBind();
         }
 
+        // Event handler ketika tombol mark attendance diklik.
         protected void btnMarkAttendance_click(object sender, EventArgs e)
         {
+            // Melakukan iterasi pada setiap baris GridView1.
             foreach (GridViewRow row in GridView1.Rows)
             {
-                int teacherId = Convert.ToInt32 (row.Cells[1].Text);
+                // Mengambil ID guru dari sel pada kolom ke-1.
+                int teacherId = Convert.ToInt32(row.Cells[1].Text);
 
+                // Mendapatkan status kehadiran yang dipilih oleh pengguna.
                 RadioButton rb1 = (row.Cells[0].FindControl("RadioButton1") as RadioButton);
                 RadioButton rb2 = (row.Cells[0].FindControl("RadioButton2") as RadioButton);
                 int status = 0;
                 if (rb1.Checked)
                 {
-                    status = 1;
+                    status = 1; // Jika radio button pertama terpilih, maka status dianggap hadir (1).
                 }
                 else if (rb2.Checked)
                 {
-                    status = 0;
+                    status = 0; // Jika radio button kedua terpilih, maka status dianggap tidak hadir (0).
                 }
 
+                // Memasukkan data kehadiran guru ke dalam database.
                 fn.Query(@"Insert into TeacherAttedance values ('" + teacherId + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
+
+                // Menampilkan pesan bahwa data telah dimasukkan dengan sukses.
                 lblMsg.Text = "Inserted Successfully";
                 lblMsg.CssClass = "alert alert-success";
             }
         }
 
+        // Event handler untuk timer, untuk menampilkan waktu saat ini pada label.
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            lblTime.Text = DateTime.Now.ToString();
+            lblTime.Text = DateTime.Now.ToString(); // Menampilkan waktu saat ini pada label lblTime.
         }
     }
 }
