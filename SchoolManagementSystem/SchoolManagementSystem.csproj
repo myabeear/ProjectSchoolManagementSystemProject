@@ -92,6 +92,7 @@
     <Content Include="Image\bg3.jpg" />
     <Content Include="Image\login.jpg" />
     <Content Include="Image\logo.png" />
+    <Content Include="Login.aspx" />
     <Content Include="MarksDetailUserControl.ascx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -318,6 +319,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MarksDetailUserControl.ascx.cs">
       <DependentUpon>MarksDetailUserControl.ascx</DependentUpon>

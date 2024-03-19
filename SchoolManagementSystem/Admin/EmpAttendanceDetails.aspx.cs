@@ -14,6 +14,11 @@ namespace SchoolManagementSystem.Admin
         Commonfnx fn = new Commonfnx(); // Inisialisasi objek Commonfnx untuk digunakan dalam kelas
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["admin"] == null)
+            {
+                Response.Redirect("../Login.aspx");
+            }
+
             if (!IsPostBack)
             {
                 GetTeacher(); // Memanggil fungsi GetTeacher() saat halaman tidak di-post kembali (refresh)

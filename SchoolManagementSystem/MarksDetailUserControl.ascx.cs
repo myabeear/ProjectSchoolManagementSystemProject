@@ -15,6 +15,11 @@ namespace SchoolManagementSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (Session["admin"] == null)
+            //{
+            //    Response.Redirect("../Login.aspx");
+            //}
+
             if (!IsPostBack)
             {
                 GetClass(); // Memanggil fungsi untuk mengisi dropdown dengan kelas-kelas yang tersedia.

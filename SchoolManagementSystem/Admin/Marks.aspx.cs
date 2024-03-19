@@ -19,6 +19,11 @@ namespace SchoolManagementSystem.Admin
         // Metode yang dipanggil saat halaman dimuat pertama kali
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["admin"] == null)
+            {
+                Response.Redirect("../Login.aspx");
+            }
+
             // Memeriksa apakah halaman dimuat karena postback, jika tidak, melakukan pengambilan kelas dan nilai
             if (!IsPostBack)
             {

@@ -17,6 +17,11 @@ namespace SchoolManagementSystem.Admin
         // Metode yang dipanggil saat halaman dimuat
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["admin"] == null)
+            {
+                Response.Redirect("../Login.aspx");
+            }
+
             // Memastikan tidak pos back
             if (!IsPostBack)
             {
