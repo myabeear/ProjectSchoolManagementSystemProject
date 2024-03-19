@@ -10,11 +10,12 @@
         </div>
         <div class="ml-auto text-right">
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-            <asp:UpdatePanel ID="UpdatePanel1" runat="server"></asp:UpdatePanel>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
                 <asp:Label ID="lblTime" runat="server" Font-Bold="true" ></asp:Label>
             </ContentTemplate>
+                </asp:UpdatePanel>
         </div>
 
         <h3 class="text-c">Teacher's Attendance</h3>

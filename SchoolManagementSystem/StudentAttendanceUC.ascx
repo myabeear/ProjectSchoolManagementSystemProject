@@ -29,13 +29,13 @@
        <div class="row mb-3 mr-lg-5 ml-lg-5 mt-md-5">
      <div class="col-md-6">
          <label for="txtRollNo">Roll Number </label>
-         <asp:TextBox ID="txtRollNo" runat="server" CssClass="form-control"></asp:TextBox>
+         <asp:TextBox ID="txtRollNo" runat="server" CssClass="form-control" placeholder="Enter Student Roll No"></asp:TextBox>
          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Class is required." ControlToValidate="txtRollNo" Display="Dynamic" ForeColor="Red" InitialValue="Select Class" SetFocusOnError="True"></asp:RequiredFieldValidator>
      </div>
 
       <div class="col-md-6">
     <label for="txtMonth">Month </label>
-<asp:TextBox ID="txtMonth" runat="server" CssClass="form-control"></asp:TextBox>
+<asp:TextBox ID="txtMonth" runat="server" CssClass="form-control" TextMode="Month"></asp:TextBox>
 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Class is required." ControlToValidate="txtMonth" Display="Dynamic" ForeColor="Red" InitialValue="Select Class" SetFocusOnError="True"></asp:RequiredFieldValidator>
   </div>
     </div>

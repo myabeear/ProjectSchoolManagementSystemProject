@@ -50,21 +50,20 @@ namespace SchoolManagementSystem
             if (ddlSubject.SelectedValue == "Select Subject")
             {
                 // Mengambil data kehadiran guru dari database berdasarkan bulan dan tahun tertentu, serta ID guru yang dipilih
-                dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No],s.Name,sa.Status,sa.Date FROM StudentAttendance sa
-                              INNER JOIN Student s ON s.RollNo = sa.RollNo  
-                              where sa.ClassId='"+ddlClass.SelectedValue+"' and sa.RollNo='"+txtRollNo.Text.Trim()+"' " +
-                              "DATEPART(yy,Date) ='" + date.Year + "' and DATEPART(M,Date) = '" + date.Month + "' and sa.Status = 1");
+                dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No], s.Name, sa.Status, sa.Date FROM StudentAttedance sa
+                      INNER JOIN Student s ON s.RollNo = sa.RollNo  
+                      WHERE sa.ClassId = '" + ddlClass.SelectedValue + "' AND sa.RollNo = '" + txtRollNo.Text.Trim() + "' AND YEAR(sa.Date) = '" + date.Year + "' AND MONTH(sa.Date) = '" + date.Month + "' AND sa.Status = 1");
             }
-            else 
+            else
             {
-                dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No],s.Name,sa.Status,sa.Date FROM StudentAttendance sa
-                              INNER JOIN Student s ON s.RollNo = sa.RollNo  
-                              where sa.ClassId='" + ddlClass.SelectedValue + "' and sa.RollNo='" + txtRollNo.Text.Trim() + "' and sa.Subject='"+ddlSubject.SelectedValue+"' " +
-                              "DATEPART(yy,Date) ='" + date.Year + "' and DATEPART(M,Date) = '" + date.Month + "' and sa.Status = 1");
+                dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No], s.Name, sa.Status, sa.Date FROM StudentAttedance sa
+                      INNER JOIN Student s ON s.RollNo = sa.RollNo  
+                      WHERE sa.ClassId = '" + ddlClass.SelectedValue + "' AND sa.RollNo = '" + txtRollNo.Text.Trim() + "' AND sa.SubjectId = '" + ddlSubject.SelectedValue + "' AND YEAR(sa.Date) = '" + date.Year + "' AND MONTH(sa.Date) = '" + date.Month + "' AND sa.Status = 1");
             }
 
             GridView1.DataSource = dt; // Mengatur sumber data GridView ke DataTable yang berisi data kehadiran guru
             GridView1.DataBind(); // Mengikat data ke GridView untuk ditampilkan ke pengguna
         }
+
     }
 }
