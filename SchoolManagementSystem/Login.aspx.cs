@@ -21,22 +21,29 @@ namespace SchoolManagementSystem
         {
             string email=inputEmail.Value.Trim();
             string password=inputPassword.Value.Trim();
-            DataTable dt = fn.Fetch("SELECT *FROM Teacher where Email = '"+email+"' and password='"+password+"'");
-            if (email == "Admin" && password == "123")
+            
+            // Check if user is teacher
+            DataTable dt = fn.Fetch("SELECT * FROM Users WHERE Email = '" + email + "' AND password = '" + password + "'");
+            if (dt.Rows.Count > 0)
             {
-                Session["admin"] = email;
-                Response.Redirect("Admin/AdminHome.aspx");
+                int roleId = Convert.ToInt32(dt.Rows[0]["RoleId"]);
+                // Check if UserRole is admin (RoleId=1) or teacher (RoleId=2)
+                if (roleId == 1)
+                {
+                    Session["admin"] = email;
+                    Response.Redirect("Admin/AdminHome.aspx");
+                }
+                else if (roleId == 2)
+                {
+                    Session["staff"] = email;
+                    Response.Redirect("Teacher/TeacherHome.aspx");
+                }
+                return; // Redirected, so exit the method
             }
-            else if(dt.Rows.Count > 0) 
-            {
-                Session["staff"] = email;
-                Response.Redirect("Teacher/TeacherHome.aspx");
-            }
-            else
-            {
-                lblMsg.Text = "Login Failed!!";
-                lblMsg.ForeColor =System.Drawing.Color.Red;
-            }
+
+            // If neither admin nor teacher, show login failed message
+            lblMsg.Text = "Login Failed!!";
+            lblMsg.ForeColor = System.Drawing.Color.Red;
         }
     }
 }

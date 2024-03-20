@@ -92,6 +92,18 @@
                             </a>
                         </li>
                         <li>
+                            <a href="../Admin/Role.aspx">
+                                <div class="icon"><i class="fas fa-user"></i></div>
+                                <div class="title">User Role</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../Admin/Users.aspx">
+                                <div class="icon"><i class="fas fa-user"></i></div>
+                                <div class="title">User</div>
+                            </a>
+                        </li>
+                        <li>
                             <a href="#">
                                 <div class="icon"><i class="fas fa-user-tie"></i></div>
                                 <div class="title">Teachers</div>
