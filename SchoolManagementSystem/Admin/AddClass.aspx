@@ -41,7 +41,7 @@
             <div class="col-md-6">
                 <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover table-bordered" DataKeyNames="ClassId" AutoGenerateColumns="False" 
                     EmptyDataText="No Record to display!" OnPageIndexChanging="GridView1_PageIndexChanging" OnRowCancelingEdit="GridView1_RowCancelingEdit" 
-                    OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" AllowPaging="true" PageSize="4">
+                    OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" OnRowDeleting="GridView1_RowDeleting" AllowPaging="true" PageSize="4">
                     <%--Membuat GridView untuk menampilkan daftar kelas.--%>
                     <Columns>
                         <asp:BoundField DataField="No" HeaderText="No" ReadOnly="True">
@@ -60,7 +60,7 @@
                             </ItemTemplate>
                             <ItemStyle HorizontalAlign="Center" />
                         </asp:TemplateField>
-                        <asp:CommandField CausesValidation="False" HeaderText="Operation" ShowEditButton="True" />
+                        <asp:CommandField CausesValidation="False" HeaderText="Operation" ShowEditButton="True" ShowDeleteButton="true" />
                         <%--Menampilkan tombol edit--%>
                     </Columns>
                     <HeaderStyle BackColor="#5558C9" ForeColor="White" />

@@ -69,7 +69,7 @@ namespace SchoolManagementSystem.Admin
         private void GetUser()
         {
             // Ambil data User dari database menggunakan fungsi Fetch dari Commonfnx
-            DataTable dt = fn.Fetch(@"Select ROW_NUMBER() OVER (ORDER BY (SELECT 1)) as [No], IdUser, [Name], Email, Mobile, DOB, Gender, [Address], RoleId,[Password] from Users");
+            DataTable dt = fn.Fetch(@"Select ROW_NUMBER() OVER (ORDER BY (SELECT 1)) as [No], UserId, [Name], Email, Mobile, DOB, Gender, [Address], RoleId,[Password] from Users");
             // Atur sumber data GridView1 menjadi DataTable dt
             GridView1.DataSource = dt;
             // Bind data ke GridView1
@@ -158,9 +158,9 @@ namespace SchoolManagementSystem.Admin
             try
             {
                 // Ambil ID guru dari data yang akan dihapus
-                int idUser = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+                int userId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
                 // Hapus guru dari database menggunakan ID guru
-                fn.Query("Delete from Users where IdUser = '" + idUser + "'");
+                fn.Query("Delete from Users where UserId = '" + userId + "'");
                 // Tampilkan pesan berhasil
                 lblMsg.Text = "Users Deleted Successfully";
                 lblMsg.CssClass = "alert alert-success";
@@ -193,7 +193,7 @@ namespace SchoolManagementSystem.Admin
                 // Ambil baris yang akan diperbarui dari GridView1
                 GridViewRow row = GridView1.Rows[e.RowIndex];
                 // Ambil ID guru dari data yang akan diperbarui
-                int idUser = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+                int userId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
                 // Ambil nilai nama, nomor telepon, kata sandi, dan alamat baru dari input teks
                 string name = (row.FindControl("txtName") as TextBox).Text;
                 string mobile = (row.FindControl("txtMobile") as TextBox).Text;
@@ -201,7 +201,7 @@ namespace SchoolManagementSystem.Admin
                 string address = (row.FindControl("txtAddress") as TextBox).Text;
                 string roleId = (row.FindControl("txtRoleId") as TextBox).Text;
                 // Perbarui data guru di database menggunakan nilai baru
-                fn.Query("Update Users set Name ='" + name.Trim() + "', Mobile='" + mobile.Trim() + "', Address='" + address.Trim() + "', RoleId='" + roleId.Trim() + "', Password='" + password.Trim() + "' where IdUser = '" + idUser + "' ");
+                fn.Query("Update Users set Name ='" + name.Trim() + "', Mobile='" + mobile.Trim() + "', Address='" + address.Trim() + "', RoleId='" + roleId.Trim() + "', Password='" + password.Trim() + "' where UserId = '" + userId + "' ");
                 // Tampilkan pesan berhasil
                 lblMsg.Text = "User Updated Successfully";
                 lblMsg.CssClass = "alert alert-success";

@@ -25,7 +25,7 @@
 
             <div class="col-md-6">
                 <label for="ddlTeacher">Teacher</label>
-                <asp:DropDownList ID="ddlTeacher" runat="server" CssClass="form-control" AutoPostBack="true"></asp:DropDownList>
+                <asp:DropDownList ID="ddlTeacher" runat="server" CssClass="form-control" ></asp:DropDownList>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Teacher is required." ControlToValidate="ddlTeacher" Display="Dynamic" ForeColor="Red" InitialValue="Select Teacher" SetFocusOnError="True"></asp:RequiredFieldValidator>
             </div>
         </div>
@@ -73,8 +73,8 @@
 
                       <asp:TemplateField HeaderText="Teacher">
                     <EditItemTemplate>
-                        <asp:DropDownList ID="ddlTeacherGv" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="TeacherId" SelectedValue='<%# Eval("TeacherId") %>' CssClass="form-control" Width="120px"></asp:DropDownList>
-                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolCS %>" SelectCommand="SELECT [TeacherId], [Name] FROM [Teacher]"></asp:SqlDataSource>
+                        <asp:DropDownList ID="ddlTeacherGv" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="UserId" SelectedValue='<%# Eval("UserId") %>' CssClass="form-control" Width="120px"></asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolCS %>" SelectCommand="SELECT [UserId], [Name] FROM [Users]"></asp:SqlDataSource>
                     </EditItemTemplate>
                     <ItemTemplate>
                         <asp:Label ID="Label3" runat="server" Text='<%# Eval("Name") %>'></asp:Label>

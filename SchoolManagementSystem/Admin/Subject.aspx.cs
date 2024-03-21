@@ -124,5 +124,26 @@ namespace SchoolManagementSystem.Admin
                 Response.Write("<script>alert('" + ex.Message + "'); </script>");
             }
         }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            try
+            {
+                // Mendapatkan id mata pelajaran guru yang akan dihapus
+                int subjectId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+                // Menghapus data dari database
+                fn.Query("Delete from Subject where SubjectId = '" + subjectId + "'");
+                lblMsg.Text = " Subject Deleted Successfully";
+                lblMsg.CssClass = "alert alert-success";
+                // Keluar dari mode edit dan memperbarui data
+                GridView1.EditIndex = -1;
+                GetSubject();
+            }
+            catch (Exception ex)
+            {
+                // Menangani kesalahan yang mungkin terjadi dan menampilkan pesan kesalahan
+                Response.Write("<script>alert('" + ex.Message + "'); </script>");
+            }
+        }
     }
 }

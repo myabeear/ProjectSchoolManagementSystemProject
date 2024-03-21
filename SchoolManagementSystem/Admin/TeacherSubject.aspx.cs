@@ -49,11 +49,11 @@ namespace SchoolManagementSystem.Admin
         private void GetTeacher()
         {
             // Mengambil data guru dari database
-            DataTable dt = fn.Fetch("Select * from Teacher");
+            DataTable dt = fn.Fetch("SELECT * FROM Users WHERE RoleId = 2");
             // Mengatur sumber data dan properti tampilan untuk dropdownlist guru
             ddlTeacher.DataSource = dt;
             ddlTeacher.DataTextField = "Name";
-            ddlTeacher.DataValueField = "TeacherId";
+            ddlTeacher.DataValueField = "UserId";
             ddlTeacher.DataBind();
             ddlTeacher.Items.Insert(0, "Select Teacher");
         }
@@ -63,11 +63,11 @@ namespace SchoolManagementSystem.Admin
         {
             // Mengambil data mata pelajaran guru dari database
             DataTable dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No], ts.Id, ts.ClassId, c.ClassName, ts.SubjectId, s.SubjectName,
-                                    ts.TeacherId, t.Name 
+                                    ts.UserId, u.Name 
                               FROM TeacherSubject ts 
                               INNER JOIN Class c ON ts.ClassId = c.ClassId 
                               INNER JOIN Subject s ON ts.SubjectId = s.SubjectId 
-                              INNER JOIN Teacher t ON ts.TeacherId = t.TeacherId");
+                              INNER JOIN Users u ON ts.UserId = u.UserId");
             // Mengatur sumber data dan mengikat data ke GridView
             GridView1.DataSource = dt;
             GridView1.DataBind();
@@ -96,26 +96,40 @@ namespace SchoolManagementSystem.Admin
                 // Mendapatkan id kelas, id mata pelajaran, dan id guru yang dipilih
                 string classId = ddlClass.SelectedValue;
                 string subjectId = ddlSubject.SelectedValue;
-                string teacherId = ddlTeacher.SelectedValue;
-                // Memeriksa apakah kombinasi kelas-mata pelajaran-guru sudah ada
-                DataTable dt = fn.Fetch("Select * from TeacherSubject where ClassId = '" + classId + "'and SubjectId='" + subjectId + "' or TeacherId='" + teacherId + "' ");
-                if (dt.Rows.Count == 0)
+                string userId = ddlTeacher.SelectedValue;
+
+                // Memeriksa apakah semua dropdownlist memiliki nilai yang dipilih
+                if (classId != "Select Class" && subjectId != "Select Subject" && userId != "Select Teacher")
                 {
-                    // Jika tidak ada, data baru dimasukkan ke dalam database
-                    string query = "Insert into TeacherSubject values('" + classId + "','" + subjectId + "','" + teacherId + "')";
-                    fn.Query(query);
-                    lblMsg.Text = "Inserted Successfully";
-                    lblMsg.CssClass = "alert alert-success";
-                    // Mengatur ulang nilai dropdownlist
-                    ddlClass.SelectedIndex = 0;
-                    ddlSubject.SelectedIndex = 0;
-                    ddlTeacher.SelectedIndex = 0;
-                    GetTeacherSubject();
+                    // Memeriksa apakah kombinasi kelas-mata pelajaran-guru sudah ada
+                    DataTable dt = fn.Fetch("Select * from TeacherSubject where ClassId = '" + classId + "' and SubjectId='" + subjectId + "' and UserId='" + userId + "' ");
+                    if (dt.Rows.Count == 0)
+                    {
+                        // Jika tidak ada, data baru dimasukkan ke dalam database
+                        string query = "Insert into TeacherSubject (ClassId, SubjectId, UserId) values('" + classId + "','" + subjectId + "','" + userId + "')";
+                        fn.Query(query);
+                        lblMsg.Text = "Inserted Successfully";
+                        lblMsg.CssClass = "alert alert-success";
+
+                        // Mengatur ulang nilai dropdownlist
+                        ddlClass.SelectedIndex = 0;
+                        ddlSubject.SelectedIndex = 0;
+                        ddlTeacher.SelectedIndex = 0;
+
+                        // Memperbarui tampilan data di GridView
+                        GetTeacherSubject();
+                    }
+                    else
+                    {
+                        // Jika sudah ada, pesan kesalahan ditampilkan
+                        lblMsg.Text = "Entered <b>Teacher Subject</b> already exists";
+                        lblMsg.CssClass = "alert alert-danger";
+                    }
                 }
                 else
                 {
-                    // Jika sudah ada, pesan kesalahan ditampilkan
-                    lblMsg.Text = "Entered <b>Teacher Subject</b> already exists";
+                    // Jika ada dropdownlist yang tidak dipilih, tampilkan pesan kesalahan
+                    lblMsg.Text = "Please select Class, Subject, and Teacher";
                     lblMsg.CssClass = "alert alert-danger";
                 }
             }
@@ -125,6 +139,7 @@ namespace SchoolManagementSystem.Admin
                 Response.Write("<script>alert('" + ex.Message + "'); </script>");
             }
         }
+
 
         // Metode yang dipanggil saat indeks halaman GridView berubah
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -184,9 +199,9 @@ namespace SchoolManagementSystem.Admin
                 // Mendapatkan id kelas, id mata pelajaran, dan id guru yang dipilih dari dropdownlist
                 string classId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlClassGv")).SelectedValue;
                 string subjectId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlSubjectGv")).SelectedValue;
-                string teacherId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlTeacherGv")).SelectedValue;
+                string userId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("ddlTeacherGv")).SelectedValue;
                 // Memperbarui data di database
-                fn.Query("Update TeacherSubject set ClassId ='" + classId + "', SubjectId='" + subjectId + "', TeacherId='" + teacherId + "' where Id = '" + teacherSubjectId + "' ");
+                fn.Query("Update TeacherSubject set ClassId ='" + classId + "', SubjectId='" + subjectId + "', UserId='" + userId + "' where Id = '" + teacherSubjectId + "' ");
                 lblMsg.Text = "Teacher Subject Updated Successfully";
                 lblMsg.CssClass = "alert alert-success";
                 // Keluar dari mode edit dan memperbarui data

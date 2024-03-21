@@ -29,7 +29,7 @@ namespace SchoolManagementSystem.Admin
         private void Attendance()
         {
             // Mengambil data dari database untuk tabel Teacher.
-            DataTable dt = fn.Fetch("Select TeacherId,Name,Mobile,Email FROM Teacher");
+            DataTable dt = fn.Fetch("Select UserId,Name,Mobile,Email FROM Users WHERE RoleId = 2");
 
             // Mengatur sumber data dari GridView1 dan mengikat data.
             GridView1.DataSource = dt;
@@ -43,7 +43,7 @@ namespace SchoolManagementSystem.Admin
             foreach (GridViewRow row in GridView1.Rows)
             {
                 // Mengambil ID guru dari sel pada kolom ke-1.
-                int teacherId = Convert.ToInt32(row.Cells[1].Text);
+                int userId = Convert.ToInt32(row.Cells[1].Text);
 
                 // Mendapatkan status kehadiran yang dipilih oleh pengguna.
                 RadioButton rb1 = (row.Cells[0].FindControl("RadioButton1") as RadioButton);
@@ -59,7 +59,7 @@ namespace SchoolManagementSystem.Admin
                 }
 
                 // Memasukkan data kehadiran guru ke dalam database.
-                fn.Query(@"Insert into TeacherAttedance values ('" + teacherId + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
+                fn.Query(@"Insert into TeacherAttedance values ('" + userId + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
 
                 // Menampilkan pesan bahwa data telah dimasukkan dengan sukses.
                 lblMsg.Text = "Inserted Successfully";

@@ -86,7 +86,7 @@
     <div class="col-md-3">
       <div class="card-counter danger">
         <i class="fa fa-chalkboard-teacher"></i>
-        <span class="count-numbers"><%Response.Write(Session["teacher"]); %></span>
+        <span class="count-numbers"><%Response.Write(Session["users"]); %></span>
         <span class="count-name">Total Teachers</span>
       </div>
     </div>

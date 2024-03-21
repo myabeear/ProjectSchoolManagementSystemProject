@@ -36,19 +36,19 @@ namespace SchoolManagementSystem.Admin
 
         void TeacherCount()
         {
-            DataTable dt = fn.Fetch("SELECT COUNT(*) from Student ");
-            Session["teacher"] = dt.Rows[0][0];
+            DataTable dt = fn.Fetch("SELECT COUNT(*) from Users ");
+            Session["users"] = dt.Rows[0][0];
         }
 
         void ClassCount()
         {
-            DataTable dt = fn.Fetch("SELECT COUNT(*) from Student ");
+            DataTable dt = fn.Fetch("SELECT COUNT(*) from Class ");
             Session["class"] = dt.Rows[0][0];
         }
 
         void SubjectCount()
         {
-            DataTable dt = fn.Fetch("SELECT COUNT(*) from Student ");
+            DataTable dt = fn.Fetch("SELECT COUNT(*) from Subject ");
             Session["subject"] = dt.Rows[0][0];
         }
     }
