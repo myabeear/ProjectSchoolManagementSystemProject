@@ -35,12 +35,12 @@ namespace SchoolManagementSystem.Admin
             {
                 string role = txtRole.Text.Trim();
                 // Cari role dengan nama yang sama di database
-                DataTable dt = fn.Fetch("Select * from UserRole where Role = '" + role + "'");
+                DataTable dt = fn.Fetch("Select * from UsersRole where Role = '" + role + "'");
 
                 if (dt.Rows.Count == 0)
                 {
                     // Buat query untuk menambahkan role baru ke database
-                    string query = "Insert into UserRole ([Role]) values ('" + role + "' ) ";
+                    string query = "Insert into UsersRole ([Role]) values ('" + role + "' ) ";
                     // Eksekusi query menggunakan fungsi Query dari Commonfnx
                     fn.Query(query);
                     // Tampilkan pesan berhasil
@@ -78,7 +78,7 @@ namespace SchoolManagementSystem.Admin
         private void GetRole()
         {
             // Ambil data User dari database menggunakan fungsi Fetch dari Commonfnx
-            DataTable dt = fn.Fetch(@"Select ROW_NUMBER() OVER (ORDER BY (SELECT 1)) as [No], RoleId, [Role] from UserRole");
+            DataTable dt = fn.Fetch(@"Select ROW_NUMBER() OVER (ORDER BY (SELECT 1)) as [No], RoleId, [Role] from UsersRole");
             // Atur sumber data GridView1 menjadi DataTable dt
             GridView1.DataSource = dt;
             // Bind data ke GridView1

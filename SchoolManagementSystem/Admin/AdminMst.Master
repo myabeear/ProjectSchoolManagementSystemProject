@@ -44,6 +44,8 @@
             });
         </script>
 
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -74,48 +76,42 @@
                                 <div class="title">Home</div>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+
+                            <li>
+                            <a href="../Admin/AddClass.aspx">
                                 <div class="icon"><i class="fas fa-hotel"></i></div>
                                 <div class="title">Class</div>
-                                <div class="arrow"><i class="fas fa-chevron-down"></i></div>
                             </a>
-                            <ul class="accordion">
-                                <li><a href="../Admin/AddClass.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add Class</a></li>
-                                <li><a href="../Admin/ClassFees.aspx" class="active"><i class="fas fa-money-bill-alt pr-1"></i>Class Fees</a></li>
-                            </ul>
                         </li>
+
                         <li>
                             <a href="../Admin/Subject.aspx">
                                 <div class="icon"><i class="fas fa-book"></i></div>
                                 <div class="title">Subjects</div>
                             </a>
                         </li>
-                        <li>
-                            <a href="../Admin/Role.aspx">
-                                <div class="icon"><i class="fas fa-user"></i></div>
-                                <div class="title">User Role</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../Admin/Users.aspx">
-                                <div class="icon"><i class="fas fa-user"></i></div>
-                                <div class="title">User</div>
-                            </a>
-                        </li>
-                        <li>
+
+                    <li>
                             <a href="#">
-                                <div class="icon"><i class="fas fa-user-tie"></i></div>
-                                <div class="title">Teachers</div>
+                                <div class="icon"><i class="fas fa-hotel"></i></div>
+                                <div class="title">User</div>
                                 <div class="arrow"><i class="fas fa-chevron-down"></i></div>
                             </a>
                             <ul class="accordion">
-                                <%--<li><a href="../Admin/Teacher.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add Teachers</a></li>--%>
-                                <li><a href="../Admin/TeacherSubject.aspx" class="active"><i class="fas fa-book-reader pr-1"></i>Teachers Subject</a></li>
-                                <li><a href="../Admin/Expense.aspx" class="active"><i class="fas fa-hand-holding-usd pr-1"></i>Add Expense</a></li>
-                                <li><a href="../Admin/ExpenseDetails.aspx" class="active"><i class="fas fa-money-check-alt pr-1"></i>Expense Details</a></li>
+                                <li><a href="../Admin/Users.aspx" class="active"><i class="fas fa-user-plus pr-1"></i>Add User</a></li>
+                                <li><a href="../Admin/Role.aspx" class="active"><i class="fas fa-user"></i>Add Role</a></li>
                             </ul>
                         </li>
+
+                            <li>
+                            <a href="../Admin/TeacherSubject.aspx">
+                                <div class="icon"><i class="fas fa-book-reader pr-1"></i></div>
+                                <div class="title">Teacher Subject</div>
+                            </a>
+                        </li>
+                        
+                       
+         
                         <li>
                             <a href="#">
                                 <div class="icon"><i class="fas fa-user-graduate"></i></div>

@@ -32,7 +32,7 @@ namespace SchoolManagementSystem.Admin
         }
         private void GetRole()
         {
-            DataTable dt = fn.Fetch("Select * from UserRole");
+            DataTable dt = fn.Fetch("Select * from UsersRole");
             ddlRole.DataSource = dt;
             ddlRole.DataTextField = "Role";
             ddlRole.DataValueField = "RoleId";
@@ -48,7 +48,7 @@ namespace SchoolManagementSystem.Admin
             {
                 int roleIdValue = Convert.ToInt32(roleId);
                 // Query untuk mendapatkan nama peran berdasarkan ID peran
-                string query = "SELECT Role FROM UserRole WHERE RoleId = " + roleIdValue;
+                string query = "SELECT Role FROM UsersRole WHERE RoleId = " + roleIdValue;
 
                 // Ambil data menggunakan fungsi Fetch dari Commonfnx
                 DataTable dt = fn.Fetch(query);
@@ -75,6 +75,31 @@ namespace SchoolManagementSystem.Admin
             // Bind data ke GridView1
             GridView1.DataBind();
         }
+
+        protected string GetGenderText(object gender)
+        {
+            if (gender != null)
+            {
+                string genderCode = gender.ToString();
+                if (genderCode == "1")
+                {
+                    return "Laki-Laki";
+                }
+                else if (genderCode == "2")
+                {
+                    return "Perempuan";
+                }
+                else
+                {
+                    return "Other";
+                }
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
+
 
         // Event handler untuk tombol Tambah Guru
         protected void bntAdd_Click(object sender, EventArgs e)
@@ -199,7 +224,7 @@ namespace SchoolManagementSystem.Admin
                 string mobile = (row.FindControl("txtMobile") as TextBox).Text;
                 string password = (row.FindControl("txtPassword") as TextBox).Text;
                 string address = (row.FindControl("txtAddress") as TextBox).Text;
-                string roleId = (row.FindControl("txtRoleId") as TextBox).Text;
+                string roleId = ((DropDownList)GridView1.Rows[e.RowIndex].Cells[2].FindControl("DropDownList1")).SelectedValue;
                 // Perbarui data guru di database menggunakan nilai baru
                 fn.Query("Update Users set Name ='" + name.Trim() + "', Mobile='" + mobile.Trim() + "', Address='" + address.Trim() + "', RoleId='" + roleId.Trim() + "', Password='" + password.Trim() + "' where UserId = '" + userId + "' ");
                 // Tampilkan pesan berhasil

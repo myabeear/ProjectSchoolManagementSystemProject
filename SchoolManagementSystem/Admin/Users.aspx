@@ -53,17 +53,20 @@
                         ForeColor="Red" ControlToValidate="ddlGender" Display="Dynamic" SetFocusOnError="true" InitialValue="Select Value"></asp:RequiredFieldValidator>
                 </div>
 
+
                 <div class="col-md-6">
                     <label for="ddlRole">Role </label>
                     <asp:DropDownList ID="ddlRole" runat="server" CssClass="form-control"></asp:DropDownList>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ErrorMessage="Role is required." ControlToValidate="ddlRole" Display="Dynamic" ForeColor="Red" InitialValue="Select Role" SetFocusOnError="True"></asp:RequiredFieldValidator>
                 </div>
-
-                <div class="col-md-6">
-                    <label for="txtPassword">Password</label>
-                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required></asp:TextBox>
-                </div>
             </div>
+
+           <div class="row mb-3 mr-lg-5 ml-lg-5 mt-md-5">
+            <div class="col-md-6">
+            <label for="txtPassword">Password</label>
+            <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" required></asp:TextBox>
+            </div>
+               </div>
 
             <div class="row mb-3 mr-lg-5 ml-lg-5 mt-md-5">
                 <div class="col-md-12">
@@ -128,13 +131,13 @@
                                 </ItemTemplate>
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:TemplateField>
-                            <asp:TemplateField HeaderText="Gender">
+                                <asp:TemplateField HeaderText="Gender">
                                 <EditItemTemplate>
                                     <asp:DropDownList ID="ddlGenderEdit" runat="server" CssClass="form-control">
-                                        <asp:ListItem Value="0">Select Gender</asp:ListItem>
-                                        <asp:ListItem Value="1">Laki-Laki</asp:ListItem>
-                                        <asp:ListItem Value="2">Perempuan</asp:ListItem>
-                                        <asp:ListItem>Other</asp:ListItem>
+                                        <asp:ListItem Text="Select Gender" Value=""></asp:ListItem>
+                                        <asp:ListItem Text="Laki-Laki" Value="Laki-Laki"></asp:ListItem>
+                                        <asp:ListItem Text="Perempuan" Value="Perempuan"></asp:ListItem>
+                                        <asp:ListItem Text="Other" Value="Other"></asp:ListItem>
                                     </asp:DropDownList>
                                     <asp:HiddenField ID="hfGender" runat="server" Value='<%# Eval("Gender") %>' />
                                     <script type="text/javascript">
@@ -142,14 +145,15 @@
                                     </script>
                                 </EditItemTemplate>
                                 <ItemTemplate>
-                                    <asp:Label ID="lblGender" runat="server" Text='<%# Eval("Gender") %>'></asp:Label>
+                                    <%# GetGenderText(Eval("Gender")) %>
                                 </ItemTemplate>
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:TemplateField>
+
                             <asp:TemplateField HeaderText="Role">
                                 <EditItemTemplate>
                                     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="Role" DataValueField="RoleId" SelectedValue='<%# Eval("RoleId") %>' CssClass="form-control"></asp:DropDownList>
-                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolCS %>" SelectCommand="SELECT * FROM [UserRole]"></asp:SqlDataSource>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SchoolCS %>" SelectCommand="SELECT * FROM [UsersRole]"></asp:SqlDataSource>
                                 </EditItemTemplate>
                                 <ItemTemplate>
                                     <%# GetRoleName(Eval("RoleId")) %>

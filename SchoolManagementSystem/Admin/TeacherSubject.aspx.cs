@@ -63,7 +63,7 @@ namespace SchoolManagementSystem.Admin
         {
             // Mengambil data mata pelajaran guru dari database
             DataTable dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No], ts.Id, ts.ClassId, c.ClassName, ts.SubjectId, s.SubjectName,
-                                    ts.UserId, u.Name 
+                                    ts.UserId, u.[Name] 
                               FROM TeacherSubject ts 
                               INNER JOIN Class c ON ts.ClassId = c.ClassId 
                               INNER JOIN Subject s ON ts.SubjectId = s.SubjectId 

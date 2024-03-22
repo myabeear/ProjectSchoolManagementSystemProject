@@ -36,7 +36,7 @@ namespace SchoolManagementSystem.Admin
 
         void TeacherCount()
         {
-            DataTable dt = fn.Fetch("SELECT COUNT(*) from Users ");
+            DataTable dt = fn.Fetch("SELECT COUNT(*) from Users WHERE RoleId = 2 ");
             Session["users"] = dt.Rows[0][0];
         }
 
