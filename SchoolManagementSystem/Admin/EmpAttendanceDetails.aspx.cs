@@ -42,7 +42,7 @@ namespace SchoolManagementSystem.Admin
             DateTime date = Convert.ToDateTime(txtMonth.Text); // Mengambil tanggal dari inputan teks dan mengonversinya menjadi tipe data DateTime
 
             // Mengambil data kehadiran guru dari database berdasarkan bulan dan tahun tertentu, serta ID guru yang dipilih
-            DataTable dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No],u.Name,ta.Status,ta.Date FROM TeacherAttedance ta
+            DataTable dt = fn.Fetch(@"SELECT ROW_NUMBER() OVER(ORDER BY (SELECT 1)) AS [No],u.Name,ta.Status,ta.Date FROM TeacherAttendance ta
                               INNER JOIN Users u ON u.UserId = ta.UserId  
                               where DATEPART(yy,Date) ='" + date.Year + "' and DATEPART(M,Date) = '" + date.Month + "' and ta.UserId = '" + ddlTeacher.SelectedValue + "'");
             GridView1.DataSource = dt; // Mengatur sumber data GridView ke DataTable yang berisi data kehadiran guru

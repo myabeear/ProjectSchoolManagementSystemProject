@@ -59,7 +59,7 @@ namespace SchoolManagementSystem.Admin
                 }
 
                 // Memasukkan data kehadiran guru ke dalam database.
-                fn.Query(@"Insert into TeacherAttedance values ('" + userId + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
+                fn.Query(@"Insert into TeacherAttendance values ('" + userId + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
 
                 // Menampilkan pesan bahwa data telah dimasukkan dengan sukses.
                 lblMsg.Text = "Inserted Successfully";

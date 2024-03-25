@@ -85,10 +85,7 @@ namespace SchoolManagementSystem.Admin
             GridView1.DataBind();
         }
 
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
 
-        }
 
         protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
         {
@@ -100,8 +97,30 @@ namespace SchoolManagementSystem.Admin
 
         protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-
+            try
+            {
+                // Ambil baris yang akan diperbarui dari GridView1
+                GridViewRow row = GridView1.Rows[e.RowIndex];
+                // Ambil ID role dari data yang akan diperbarui
+                int roleId = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Values[0]);
+                string role = (row.FindControl("TextBox1") as TextBox).Text;
+                // Perbarui data guru di database menggunakan nilai baru
+                fn.Query("Update UsersRole set Role ='" + role.Trim() + "' where RoleId = '" + roleId + "' ");
+                // Tampilkan pesan berhasil
+                lblMsg.Text = "User Role Updated Successfully";
+                lblMsg.CssClass = "alert alert-success";
+                // Atur indeks edit GridView1 menjadi -1
+                GridView1.EditIndex = -1;
+                // Panggil kembali fungsi GetTeacher untuk memperbarui tampilan
+                GetRole();
+            }
+            catch (Exception ex)
+            {
+                // Tangani kesalahan dengan menampilkan pesan kesalahan menggunakan JavaScript
+                Response.Write("<script>alert('" + ex.Message + "'); </script>");
+            }
         }
+    
 
         protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {

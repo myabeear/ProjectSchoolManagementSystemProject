@@ -29,7 +29,7 @@
                 <div class="col-md-8">
                     <asp:GridView ID="GridView1" runat="server" CssClass="table table-hover table-bordered" EmptyDataText="No Record To Display!"
                         AutoGenerateColumns="False" AllowPaging="true" PageSize="4" OnPageIndexChanging="GridView1_PageIndexChanging" DataKeyNames="RoleId" OnRowCancelingEdit="GridView1_RowCancelingEdit"
-                        OnRowDeleting="GridView1_RowDeleting" OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating">
+                        OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating">
                         <Columns>
                             <asp:BoundField DataField="No" HeaderText="No" ReadOnly="true">
                                 <ItemStyle HorizontalAlign="Center" />
@@ -44,7 +44,7 @@
                                 </ItemTemplate>
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:TemplateField>
-                            <asp:CommandField CausesValidation="false" HeaderText="Operation" ShowDeleteButton="true" ShowEditButton="True">
+                            <asp:CommandField CausesValidation="false" HeaderText="Operation" ShowEditButton="True">
                                 <ItemStyle HorizontalAlign="Center" />
                             </asp:CommandField>
                         </Columns>

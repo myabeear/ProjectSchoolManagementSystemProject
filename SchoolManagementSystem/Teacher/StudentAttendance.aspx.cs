@@ -86,7 +86,7 @@ namespace SchoolManagementSystem.Teacher
                     status = 0;
                 }
 
-                fn.Query(@"Insert into StudentAttedance values ('" + ddlClass.SelectedValue + "', '" + ddlSubject.SelectedValue + "','" + rollNo + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
+                fn.Query(@"Insert into StudentAttendance values ('" + ddlClass.SelectedValue + "', '" + ddlSubject.SelectedValue + "','" + rollNo + "', '" + status + "', '" + DateTime.Now.ToString("yyyy/MM/dd") + "')");
                 isTrue= true;
                 lblMsg.Text = "Inserted Successfully";
                 lblMsg.CssClass = "alert alert-success";

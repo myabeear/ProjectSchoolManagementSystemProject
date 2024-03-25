@@ -62,8 +62,8 @@
                             <img src="../Image/logo.png" alt="profile_img">
                         </div>
                         <div class="profile_data">
-                            <p class="name">Teacher</p>
-                            <span><i class="fas fa-map-marker-alt"></i>Pangkalpinang, Indonesia</span>
+                            <p class="name"><asp:Label ID="lblUserName" runat="server"><%Response.Write(Session["username"]); %></asp:Label></p>
+                            <span><i class="fas fa-map-marker-alt"></i><%Response.Write(Session["address"]); %></span>
                         </div>
                     </div>
 

@@ -38,13 +38,14 @@
                    ForeColor="Red" ControlToValidate="ddlGender" Display="Dynamic" SetFocusOnError="true" InitialValue="Select Value" ></asp:RequiredFieldValidator>
                </div>
 
-            <div class="col-md-6">
-           <label for="txtMobile">Contact Number</label>
-             <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control" TextMode="Number" placeholder="12 Digits Mobile No" required></asp:TextBox>
-                <asp:RegularExpressionValidator runat="server" ErrorMessage="Invalid Mobile No." 
-                     ForeColor="Red" ValidationExpression="[0-9]{12}" Display="Dynamic" SetFocusOnError="true" ControlToValidate="txtMobile">
-              </asp:RegularExpressionValidator>
+           <div class="col-md-6">
+    <label for="txtMobile">Contact Number</label>
+    <asp:TextBox ID="txtMobile" runat="server" CssClass="form-control" TextMode="SingleLine" placeholder="12 Digits Mobile No" required></asp:TextBox>
+    <asp:RegularExpressionValidator runat="server" ErrorMessage="Invalid Mobile No." 
+        ForeColor="Red" ValidationExpression="[0-9]{13}" Display="Dynamic" SetFocusOnError="true" ControlToValidate="txtMobile">
+    </asp:RegularExpressionValidator>
 </div>
+
        </div>
 
                <div class="row mb-3 mr-lg-5 ml-lg-5 mt-md-5">
